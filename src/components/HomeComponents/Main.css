@@ -1,0 +1,32 @@
+#home-main h2{
+    text-align: center;
+}
+
+.pick-side-ctn{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+
+    background-color: rgb(0,0,0,.5);
+
+    border-radius: 10px;
+}
+
+.o-size{
+    /* box-sizing: border-box; */
+
+}
+
+.pick-side{
+    width: 80%;
+    padding: 40px;
+}
+
+.pick-side:hover{
+    background-color: rgb(255,255,255,.5);
+}
+
+.pick-side:focus{
+    background-color: rgb(255,255,255,.5);
+}
