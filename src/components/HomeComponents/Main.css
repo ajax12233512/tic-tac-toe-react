@@ -2,15 +2,35 @@
     text-align: center;
 }
 
-.pick-side-ctn{
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 40px;
+button img{
+    width: auto;
+}
 
+.pick-side-ctn{
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 60px;
+    grid-template-columns: 1fr 1fr;
     background-color: rgb(0,0,0,.5);
 
     border-radius: 10px;
+}
+
+.pick-side-ctn h2{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    text-align: center;
+}
+
+.pick-side-ctn button{
+
+    border: none;
+    background-color: transparent;
+}
+
+.pick-side-ctn button:focus{
+    border: 1px solid white;
+    background-color:  rgb(255,255,255,.5);
 }
 
 .o-size{
@@ -19,8 +39,9 @@
 }
 
 .pick-side{
-    width: 80%;
-    padding: 40px;
+    width: 100%;
+    padding: 30px;
+    justify-self: stretch;
 }
 
 .pick-side:hover{
@@ -29,4 +50,20 @@
 
 .pick-side:focus{
     background-color: rgb(255,255,255,.5);
+}
+
+.home-start-btn{
+    margin: 10px 0;
+    padding: 20px;
+    background-color: rgb(194, 80, 194);
+    border: none;
+}
+
+.home-start-btn:hover{
+    border: 1px solid white;
+}
+
+.start-btns{
+    display: flex;
+    flex-direction: column;
 }
