@@ -1,5 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-
+import playerSideReducer from "../utils/playerSideSlice";
 export default configureStore({
-    reducer: {}
+    reducer: {
+        playerOneSide : playerSideReducer
+    }
 })

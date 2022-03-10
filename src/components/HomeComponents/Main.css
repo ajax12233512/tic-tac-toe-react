@@ -28,14 +28,11 @@ button img{
     background-color: transparent;
 }
 
-.pick-side-ctn button:focus{
-    border: 1px solid white;
-    background-color:  rgb(255,255,255,.5);
-}
 
-.o-size{
+
+.sideSelected{
     /* box-sizing: border-box; */
-
+    background: rgb(255,255,255,.5);
 }
 
 .pick-side{
@@ -48,9 +45,6 @@ button img{
     background-color: rgb(255,255,255,.5);
 }
 
-.pick-side:focus{
-    background-color: rgb(255,255,255,.5);
-}
 
 .home-start-btn{
     margin: 10px 0;
