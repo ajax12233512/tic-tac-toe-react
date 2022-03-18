@@ -2,8 +2,11 @@ import React from 'react';
 import './Header.css';
 import logo1 from '../../../img/O-mark.svg'
 import logo2 from '../../../img/X-mark.svg'
+import { useSelector, useDispatch } from 'react-redux';
 
 function Header() {
+  const turn = useSelector(state => state.turn.value)  
+
   return (
     <div id='game'>
         <div className='game-icon'>

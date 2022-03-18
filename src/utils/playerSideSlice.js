@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const playerSideSlice = createSlice({
     name: 'playerOneSide',
     initialState: {
-        value: 'x'
+        value : 'x'
     },
     reducers: {
         pickX: state => {
@@ -18,5 +18,7 @@ export const playerSideSlice = createSlice({
 })
 
 export const { pickX, pickO } = playerSideSlice.actions
+
+
 
 export default playerSideSlice.reducer
