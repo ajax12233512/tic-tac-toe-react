@@ -1,0 +1,26 @@
+#board{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#board div{
+    box-sizing: border-box;
+    width: 90%;
+    height: 8rem;
+    background-color: grey;
+    justify-self: center;
+    margin: 3px;
+    border-radius: 10px;
+
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board div:hover{
+    border: 1px solid white;
+}

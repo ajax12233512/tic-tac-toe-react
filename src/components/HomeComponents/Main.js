@@ -5,11 +5,10 @@ import './Main.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { pickO, pickX } from '../../utils/playerSideSlice'
 
+
 function Main() {
   const playerOneSide = useSelector(state => state.playerOneSide.value);
   const dispatch = useDispatch();
-
-  
 
   return (
     <div id='home-main'>
@@ -30,8 +29,8 @@ function Main() {
             <h2>Player 1 is {playerOneSide.toUpperCase()}</h2>
         </div>
         <div className='start-btns'>
-            <button className='home-start-btn'>Start Vs PC</button>
-            <button className='home-start-btn'>Start Vs Player</button>
+            <a href='/game'><button className='home-start-btn'>Start Vs PC</button></a>
+            <a href='/game'><button className='home-start-btn'>Start Vs Player</button></a>
         </div>
     </div>
   )

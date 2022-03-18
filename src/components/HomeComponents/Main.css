@@ -23,7 +23,7 @@ button img{
 }
 
 .pick-side-ctn button{
-
+    cursor: pointer;
     border: none;
     background-color: transparent;
 }
@@ -51,6 +51,8 @@ button img{
     padding: 20px;
     background-color: rgb(194, 80, 194);
     border: none;
+
+    cursor: pointer;
 }
 
 .home-start-btn:hover{
@@ -60,4 +62,8 @@ button img{
 .start-btns{
     display: flex;
     flex-direction: column;
+}
+
+.start-btns a button{
+    width: 100%;
 }
