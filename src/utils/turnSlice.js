@@ -10,13 +10,13 @@ export const turnSlice = createSlice({
             state.value = 'x';
             return state;
         },
-        switchY : state => {
+        switchO : state => {
             state.value = 'o';
             return state;
         }  
     }
 })
 
-export const { switchX, switchY } = turnSlice.actions;
+export const { switchX, switchO } = turnSlice.actions;
 
 export default turnSlice.reducer
