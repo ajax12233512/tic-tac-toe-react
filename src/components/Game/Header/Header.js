@@ -5,7 +5,7 @@ import logo2 from '../../../img/X-mark.svg'
 import { useSelector, useDispatch } from 'react-redux';
 
 function Header() {
-  const turn = useSelector(state => state.turn.value)  
+  const turn = useSelector(state => state.playerOneSide.value)  
 
   return (
     <div id='game'>
@@ -14,7 +14,7 @@ function Header() {
             <img src={logo2}/>
         </div>
         <div className='game-turn'>
-            <p>X Turn</p>
+            <p>{turn.toUpperCase()} Turn</p>
         </div>
         <div>
             <svg className='game-undo' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
