@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import './Header.css';
 import logo1 from '../../../img/O-mark.svg'
 import logo2 from '../../../img/X-mark.svg'
 import { useSelector, useDispatch } from 'react-redux';
+import { switchO, switchX } from '../../../utils/turnSlice';
 
 function Header() {
+  const firstTurn = useSelector(state => state.playerOneSide.value);
   const turn = useSelector(state => state.turn.value)  
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+      if(firstTurn === 'o'){
+          dispatch(switchO());
+      }
+      else if(firstTurn === 'x'){
+          dispatch(switchX())
+      }
+  }, [])
 
   return (
     <div id='game'>

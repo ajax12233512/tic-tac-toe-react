@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { switchX, switchO } from '../../../utils/turnSlice';
 import './Board.css';
 
 function Board() { 
 
-  let [xSpaces, setXSpaces] = useState([]);
-  let [ySpaces, setYSpaces] = useState([]);
+  let [xSpaces] = useState([]);
+  let [ySpaces] = useState([]);
   
   const turn = useSelector(state => state.turn.value)
+ 
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    
+  })
 
   const handleClick = (e) => {
     const el = e.target;

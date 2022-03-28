@@ -9,19 +9,30 @@ import { pickO, pickX } from '../../utils/playerSideSlice'
 function Main() {
   const playerOneSide = useSelector(state => state.playerOneSide.value);
   const dispatch = useDispatch();
+  
+  const handleClick = (e) => {
+    const firstTurn = e.target.attributes.datatype.value
+    window.localStorage.setItem('firstTurn', firstTurn);
+  }
 
   return (
     <div id='home-main'>
         <h2>Pick Player One's Mark</h2>
         <div className='pick-side-ctn'>   
-            <button 
-            onClick={() => dispatch(pickO())}
+            <button datatype='o' 
+            onClick={(e) => {
+                dispatch(pickO())
+                handleClick(e)
+            }}
             style={playerOneSide === 'o' ? { backgroundColor: 'rgb(255,255,255,.5)', padding: '20px'} : {padding: '20px'}}
             >
                 <img datatype='o' src={logo1} alt='o' />
             </button>
-            <button 
-            onClick={() => dispatch(pickX())} 
+            <button datatype='x' 
+            onClick={(e) => {
+                dispatch(pickX())
+                handleClick(e);
+            }} 
             style={playerOneSide === 'x' ? { backgroundColor: 'rgb(255,255,255,.5)', padding: '20px'} : {padding: '20px'}}
             >
                 <img datatype='x' src={logo2} alt='x'/>
