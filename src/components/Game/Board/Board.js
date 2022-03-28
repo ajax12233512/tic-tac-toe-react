@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { switchX, switchO } from '../../../utils/turnSlice';
 import './Board.css';
 
 function Board() { 
 
-  const xSpaces = [];
-  const ySpaces = [];
+  let [xSpaces, setXSpaces] = useState([]);
+  let [ySpaces, setYSpaces] = useState([]);
   
-  const turn = useSelector(state => state.playerOneSide.value)
+  const turn = useSelector(state => state.turn.value)
   const dispatch = useDispatch();
+
   const handleClick = (e) => {
     const el = e.target;
     const space = el.attributes.datatype.value;
@@ -17,7 +18,11 @@ function Board() {
         return
     }   
     el.setAttribute('class', 'board-x')
-    
+
+    if(xSpaces.length + ySpaces.length === 9){
+      window.location.assign('/end')
+    }
+ 
     el.innerText = turn
     if(turn === 'x') {
       xSpaces.push(space)
@@ -27,6 +32,8 @@ function Board() {
       ySpaces.push(space)
       dispatch(switchX())
     }
+
+
   }
   
   //# Refactor

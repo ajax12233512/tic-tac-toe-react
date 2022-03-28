@@ -5,7 +5,7 @@ import logo2 from '../../../img/X-mark.svg'
 import { useSelector, useDispatch } from 'react-redux';
 
 function Header() {
-  const turn = useSelector(state => state.playerOneSide.value)  
+  const turn = useSelector(state => state.turn.value)  
 
   return (
     <div id='game'>
