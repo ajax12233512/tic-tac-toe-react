@@ -41,7 +41,7 @@ function Main() {
         </div>
         <div className='start-btns'>
             <a href='/game'><button className='home-start-btn'>Start Vs PC</button></a>
-            <a href='/game'><button className='home-start-btn'>Start Vs Player</button></a>
+            {/* <a href='/game'><button className='home-start-btn'>Start Vs Player</button></a> */}
         </div>
     </div>
   )

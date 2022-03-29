@@ -1,7 +1,8 @@
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
 import playerSideReducer from "../utils/playerSideSlice";
 import turnReducer from '../utils/turnSlice';
+import winReducer from '../utils/winSlice'
 //Redux-Persist
 import {
     persistStore,
@@ -18,7 +19,8 @@ import storage from "redux-persist/lib/storage";
 
 const rootReducer = combineReducers({
     playerOneSide : playerSideReducer,
-    turn: turnReducer
+    turn: turnReducer,
+    winner: winReducer
 })
 
 const persistConfig = {

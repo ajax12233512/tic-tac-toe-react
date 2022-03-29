@@ -20,5 +20,4 @@ export const playerSideSlice = createSlice({
 export const { pickX, pickO } = playerSideSlice.actions
 
 
-
 export default playerSideSlice.reducer

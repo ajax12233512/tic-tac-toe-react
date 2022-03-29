@@ -22,8 +22,8 @@ function Header() {
   return (
     <div id='game'>
         <div className='game-icon'>
-            <img src={logo1}/>
-            <img src={logo2}/>
+            <img src={logo1} alt='circle'/>
+            <img src={logo2} alt='circle'/>
         </div>
         <div className='game-turn'>
             <p>{turn.toUpperCase()} Turn</p>
