@@ -13,7 +13,7 @@ export const winSlice = createSlice({
         },
         oWin: state => {
             console.log('y wins')
-            state.value = 'y'
+            state.value = 'o'
             return state
         }
     }

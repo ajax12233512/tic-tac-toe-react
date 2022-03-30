@@ -40,7 +40,7 @@ function Main() {
             <h2>Player 1 is {playerOneSide.toUpperCase()}</h2>
         </div>
         <div className='start-btns'>
-            <a href='/game'><button className='home-start-btn'>Start Vs PC</button></a>
+            <a href='/game'><button className='home-start-btn'>Start</button></a>
             {/* <a href='/game'><button className='home-start-btn'>Start Vs Player</button></a> */}
         </div>
     </div>

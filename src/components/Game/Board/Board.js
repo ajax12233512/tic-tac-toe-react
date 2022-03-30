@@ -37,65 +37,65 @@ function Board() {
     }
 
     if(xSpaces.includes('a1') && xSpaces.includes('b1') && xSpaces.includes('c1')) {
-      dispatch(xWin)
+      dispatch(xWin())
       document.location.assign('/end')
     }
     if(oSpaces.includes('a1') && oSpaces.includes('b1') && oSpaces.includes('c1')) {
-      dispatch(oWin)
+      dispatch(oWin())
       document.location.assign('/end')
     }
 
     if(xSpaces.includes('a1') && xSpaces.includes('b2') && xSpaces.includes('c3')) {
-      dispatch(xWin)
+      dispatch(xWin())
       document.location.assign('/end')
     }
     if(oSpaces.includes('a1') && oSpaces.includes('b2') && oSpaces.includes('c3')) {
-      dispatch(oWin)
+      dispatch(oWin())
       document.location.assign('/end')
     }
 
     if(xSpaces.includes('a1') && xSpaces.includes('a2') && xSpaces.includes('a3')) {
-      dispatch(xWin)
+      dispatch(xWin())
       document.location.assign('/end')
     }
     if(oSpaces.includes('a1') && oSpaces.includes('a2') && oSpaces.includes('a3')) {
-      dispatch(oWin)
+      dispatch(oWin())
       document.location.assign('/end')
     }
 
     if(xSpaces.includes('b1') && xSpaces.includes('b2') && xSpaces.includes('b3')) {
-      dispatch(xWin)
+      dispatch(xWin())
       document.location.assign('/end')
     }
     if(oSpaces.includes('b1') && oSpaces.includes('b2') && oSpaces.includes('b3')) {
-      dispatch(oWin)
+      dispatch(oWin())
       document.location.assign('/end')
     }
 
     if(xSpaces.includes('c1') && xSpaces.includes('b2') && xSpaces.includes('a3')) {
-      dispatch(xWin)
+      dispatch(xWin())
       document.location.assign('/end')
     }
     if(oSpaces.includes('c1') && oSpaces.includes('b2') && oSpaces.includes('a3')) {
-      dispatch(oWin)
+      dispatch(oWin())
       document.location.assign('/end')
     }
 
     if(xSpaces.includes('c1') && xSpaces.includes('c2') && xSpaces.includes('c3')) {
-      dispatch(xWin)
+      dispatch(xWin())
       document.location.assign('/end')
     }
     if(oSpaces.includes('c1') && oSpaces.includes('c2') && oSpaces.includes('c3')) {
-      dispatch(oWin)
+      dispatch(oWin())
       document.location.assign('/end')
     }
 
     if(xSpaces.includes('a3') && xSpaces.includes('b3') && xSpaces.includes('c3')) {
-      dispatch(xWin)
+      dispatch(xWin())
       document.location.assign('/end')
     }
     if(oSpaces.includes('a3') && oSpaces.includes('b3') && oSpaces.includes('c3')) {
-      dispatch(oWin)
+      dispatch(oWin())
       document.location.assign('/end')
     }
   }
