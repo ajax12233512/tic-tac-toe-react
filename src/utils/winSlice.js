@@ -15,10 +15,14 @@ export const winSlice = createSlice({
             console.log('y wins')
             state.value = 'o'
             return state
+        },
+        tie : state => {
+            state.value = 'tie'
+            return state;
         }
     }
 })
 
-export const { xWin, oWin } = winSlice.actions
+export const { xWin, oWin, tie } = winSlice.actions
 
 export default winSlice.reducer;

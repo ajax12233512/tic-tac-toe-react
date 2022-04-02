@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { switchX, switchO } from '../../../utils/turnSlice';
-import { xWin, oWin } from '../../../utils/winSlice'
+import { xWin, oWin, tie } from '../../../utils/winSlice'
 import './Board.css';
 
 function Board() { 
@@ -14,6 +14,7 @@ function Board() {
 
   useEffect(() => {
     if(xSpaces.length + oSpaces.length === 9){
+      dispatch(tie());
       document.location.assign('/end')
     }
   })
