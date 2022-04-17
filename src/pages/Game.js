@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from '../components/Game/Header/Header'
 import Board from '../components/Game/Board/Board'
-
+import './Game.css'
 function Game() {
   return (
-    <div>
+    <div id='game-page'>
       <Header />
-        Game
-       <a href='/'>Home</a>
       <Board />
+      <a href='/'>Home</a>
     </div>
   )
 }

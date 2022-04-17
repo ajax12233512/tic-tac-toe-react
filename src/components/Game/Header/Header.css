@@ -21,3 +21,10 @@
     margin: 0;
     font-size: 28px;
 }
+
+@media screen and (max-width: 600px) {
+    #game{
+        flex-direction: column;
+    }
+}
+    
