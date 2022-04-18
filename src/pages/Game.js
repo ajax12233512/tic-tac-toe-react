@@ -7,7 +7,7 @@ function Game() {
     <div id='game-page'>
       <Header />
       <Board />
-      <a href='/'>Home</a>
+      <a id='game-home-btn' href='/'>Home</a>
     </div>
   )
 }

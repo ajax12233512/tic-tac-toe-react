@@ -4,6 +4,22 @@
     text-align: top;
 }
 
+#game-home-btn{
+    display: block;
+    max-width: 400px;
+    padding: 5px 0;
+    border: 4px solid black;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+}
+
+#game-home-btn:hover{
+    background-color: purple;
+    color: white;    
+    border: 4px solid purple;
+}
 
 .game-icon img{
     width: 30px;

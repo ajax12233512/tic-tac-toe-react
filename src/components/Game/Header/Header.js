@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect } from 'react';
 import './Header.css';
 import logo1 from '../../../img/O-mark.svg'
 import logo2 from '../../../img/X-mark.svg'
